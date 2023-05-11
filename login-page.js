@@ -7,7 +7,7 @@ loginButton.addEventListener("click", (e) => {
     const password = loginForm.password.value;
 
 
-    if (username === "user" && password === "web-dev") {
+    if (username && password) {
         alert("You have successfully logged in.");
         //localstorage.clear();
         window.location.replace("/index.html");
